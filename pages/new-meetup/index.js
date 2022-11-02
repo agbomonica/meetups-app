@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -23,7 +22,7 @@ const NewMeetup = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <Head>
         <meta
           name="description"
@@ -32,7 +31,7 @@ const NewMeetup = () => {
         <title>Add a new Meetup</title>
       </Head>
       <NewMeetupForm onAddMeetup={addMeetupHandler} />
-    </Fragment>
+    </>
   );
 };
 
