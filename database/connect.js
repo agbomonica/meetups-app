@@ -11,7 +11,7 @@ export const connectMongoDB = async function () {
     console.log("connected");
 
     return client;
-  } catch (err) {
-    return Promise.reject(err);
+  } catch (e) {
+    return Promise.reject(e);
   }
 };
